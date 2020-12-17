@@ -22,9 +22,9 @@ int		reccursion_binary_search(int value, int arr[], int low, int high)
 	if (low == high)
 		return (-1);
 	if (arr[pos] < value)
-		return (binary_search(value, arr, pos + 1, high));
+		return (reccursion_binary_search(value, arr, pos + 1, high));
 	else
-		return (binary_search(value, arr, low, pos - 1));
+		return (reccursion_binary_search(value, arr, low, pos - 1));
 
 }
 
@@ -32,5 +32,5 @@ int		main(void)
 {
 	int		arr[] = {1, 3, 5, 6, 10, 12};
 
-	printf("index: %d\n", reccursion_binary_search(1, arr, 0, 5));
+	printf("index: %d\n", reccursion_binary_search(5, arr, 0, 5));
 }
