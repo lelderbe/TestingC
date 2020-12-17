@@ -25,6 +25,15 @@ int		bit1count(unsigned x)
 	return (count);
 }
 
+void	comma()
+{
+	int			i;
+	int			j;
+
+	i = 5, j = 7;
+	printf("i: %d, j: %d\n", i, j);
+}
+
 int		main(void)
 {
 	/*
@@ -34,6 +43,7 @@ int		main(void)
 	printf("%d\n", x);
 	printf("%d\n", x &= (x - 1));
 	*/
+	comma();
 
 	printf("%d\n", bit1count(3));
 	
