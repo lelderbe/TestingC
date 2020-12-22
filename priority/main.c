@@ -96,13 +96,24 @@ void	test5(char *str)
 	printf("     c: %c %c\n", c, *ptr);
 }
 
+/*
+ * *s++ test
+*/
+void	test6(char *s)
+{
+	while (*s)
+		printf("%c", *s++);
+	printf("\n");
+}
+
 int		main(void)
 {
 	//test1();
 	//test2();
 	//test3();
 	//test4();
-	test5("Hello");
+	//test5("Hello");
+	test6("Hello");
 
 	return (0);
 }
