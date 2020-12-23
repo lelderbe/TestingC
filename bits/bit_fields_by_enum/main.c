@@ -20,11 +20,10 @@ void	print_bits(int n)
 	int		i;
 
 	i = 8;
-	while (n && --i)
+	while (n && (--i >= 0))
 	{
-		if (n & 1)
-			buf[i] = '1';
-		n = n >> 1;
+		buf[i] = '0' + (n & 1);
+		n >>= 1;
 	}
 	printf("%s\n", buf);
 }
@@ -38,4 +37,7 @@ int		main(void)
 	print_bits(flags);
 	flags |= flags | STATIC;
 	print_bits(flags);
+	flags = 255;
+	print_bits(flags);
+
 }
