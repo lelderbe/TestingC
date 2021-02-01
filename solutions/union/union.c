@@ -14,9 +14,9 @@
 
 int		main(int argc, char **argv)
 {
-	int		chars[255];
-	int		i;
-	char	*s;
+	static int	chars[255];
+	int			i;
+	char		*s;
 
 	if (argc == 3)
 	{
