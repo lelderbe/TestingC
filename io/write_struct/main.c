@@ -55,8 +55,8 @@ void	init_bmp(t_bmp *bmp, t_data *data)
 {
 	memset(bmp, 0, sizeof(*bmp));
 	memset(data, 0, sizeof(*data));
-	bmp->file.file_type = 0x424D;
-	bmp->file.file_size = 312;
+	bmp->file.file_type = 0x4D42;
+	//bmp->file.file_size = 312;
 	bmp->file.pixel_offset = 54;
 	bmp->info.header_size = 40;
 	bmp->info.image_width = 5;
